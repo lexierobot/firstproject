@@ -38,5 +38,4 @@ Yellow | Daisy
 Red | Rose
 Purple | Hyacinth
 Pink | Geranium
-White | Magnolia# firstproject
-First Homework Project
+White | Magnolia
