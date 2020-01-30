@@ -50,3 +50,40 @@ if (count !== 1);
             console.log ("doesn't equal one, equals one, and is false");
         } // multiple if statements are only logged if each statement is met.
         // conditional statements are logged if one or another statement is met.
+
+
+//Function Homework
+
+var x = addNumber (10, 55);
+
+function addNumber (x, y) {
+  console.log (x+y)
+  var x = 5;
+  var y = 10;
+}
+addNumber ();
+
+function answerThis (b, c) {
+    return b * c;
+    var b = 10;
+    var c = 50;
+}
+answerThis ();
+
+//just testing
+function print () {
+    console.log ("hey");
+}
+print ();
+
+//more tests
+var person = {
+    fullName: function(city, country) {
+      return this.firstName + " " + this.lastName + "," + city + "," + country;
+    }
+  }
+  var person1 = {
+    firstName:"John",
+    lastName: "Doe"
+  }
+  person.fullName.call(person1, "Oslo", "Norway");
