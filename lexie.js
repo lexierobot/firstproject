@@ -30,12 +30,23 @@ console.log (count*=2); //should return 14
 console.log (count%=3); //should return a value of 2
 console.log (count%=2); //should return 0 since 14 is evenly divisible by 7, there is no remainder
 
-if(count == 0){
+if(count !== 0){
     console.log ("answer is zero");
 } else {
     console.log ("variable is not even");
 }
-    
-   
 
+if (count < 1 && count > -2); {
+    console.log ("it's less than one and greater than negative 2")
+} if (count < 10 || count > 200); {
+    console.log ("it's not less than one and is greater than negative 2")
+} if (count == 0 || count < 0); {
+    console.log ("the answer is less than zero");
+}
 
+if (count !== 1);
+    if (count == 1);
+        if (count = false); {
+            console.log ("doesn't equal one, equals one, and is false");
+        } // multiple if statements are only logged if each statement is met.
+        // conditional statements are logged if one or another statement is met.
