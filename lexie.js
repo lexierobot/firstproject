@@ -21,7 +21,7 @@ console.log (a * b);
 console.log ((a * b) + (2 + true))
 */
 
-// Conditional Homework
+// **Conditional Homework**
 
 var count = 2;
 
@@ -36,33 +36,55 @@ if(count !== 0){
     console.log ("variable is not even");
 }
 
-if (count < 1 && count > -2); {
+if (count < 1 && count > -2) {
     console.log ("it's less than one and greater than negative 2")
-} if (count < 10 || count > 200); {
+} if (count < 10 || count > 200) {
     console.log ("it's not less than one and is greater than negative 2")
-} if (count == 0 || count < 0); {
+} if (count == 0 || count < 0) {
     console.log ("the answer is less than zero");
 }
 
-if (count !== 1);
-    if (count == 1);
-        if (count = false); {
+if (count !== 1){
+    if (count == 1){
+        if (count = false) {
             console.log ("doesn't equal one, equals one, and is false");
         } // multiple if statements are only logged if each statement is met.
         // conditional statements are logged if one or another statement is met.
+    }
+}
+//**Loop Homework**
+//1 
+var i;
+//2
+for (i = 0; i <=50; i++){
+    console.log(i);
+} 
+while(i<=50){ //3
+    console.log(i);
+    i+=2;
+}
+
+//4
+var a;
+for (a= 1; a <=100; a++) {
+    console.log (a);
+    while (a/3==0) {
+    console.log ("fizz");
+    if (a%3 === 0){
+        console.log("here");
+    }
+}
 
 
-//Function Homework
+//**Function Homework**
 
 //1
 var x = addNumber (10, 55);
 
 function addNumber (x, y) {
-  console.log (x+y)
-  var x = 5;
-  var y = 10;
+  console.log(x+y);
 }
-addNumber ();
+addNumber(5,10);
 
 //2
 
@@ -92,5 +114,4 @@ while (i <= 50){
     //will "return" to execute the code 
 //}
 //arguments are values received when the function is invoked
-//inside the function, arguments are local variables
-//4
+//inside the function, arguments are local variables.
