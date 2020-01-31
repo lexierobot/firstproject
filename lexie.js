@@ -78,31 +78,54 @@ for (a = 0; a <=100; a++){
 
 //**Function Homework**
 
-// //1
-// var x = addNumber (10, 55);
+//1
+function addNumber (x, y) {
+  console.log(x+y);
+}
+addNumber(5,10);
 
-// function addNumber (x, y) {
-//   console.log(x+y);
-// }
-// addNumber(5,10);
+//2
 
-// //2
+function multiply (c,d) {
+    console.log (c*d);
+}
+multiply (9,9);
 
-// function myFunction (a,b){
-//     return a * b;
-// }
-// var result = myFunction (7,9);
-// console.log(result);
+//also 2
+function myFunction (a,b){
+    return a * b;
+}
+var result = myFunction (7,9);
+console.log(result);
 
 //3
 
-// var i = 1;
+var i = 1;
 
-// while (i <= 50){
-//   if(i%2===0){
-//     console.log(i);
-//   }
-//   i++;
-// }
-//
-//
+while (i <= 50){
+  if(i%2===0){
+    console.log(i);
+  }
+  i++;
+}
+
+//4
+var person; //global variable
+function name(x, y){
+   console.log(x + y);
+}
+name (Lexie, Helwig);
+
+//5
+(function () {
+    var name = "This is an IIFE"
+} )();
+
+function print (){
+    console.log ("hey");
+}
+print
+
+//Exercise Math
+
+//1
