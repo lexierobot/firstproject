@@ -72,10 +72,25 @@ function myFunction (a,b){
 var result = myFunction (7,9);
 console.log(result);
 
-//3 Needs work
-function lFunction (start, end){
-    for (var i=10 {
-    } while (i >15)
+//3
+
+var i = 1;
+
+while (i <= 50){
+  if(i%2===0){
+    console.log(i);
+  }
+  i++;
 }
 
+// function name(parameter 1, parameter 2 definition) {
+    //code to be executed will only execute when invoked
+    //invoking could be when an event occurs
+    //when we call it in javascript code
+    //or self invoked (automatically)
+    //when javascript issues a return statement, js
+    //will "return" to execute the code 
+//}
+//arguments are values received when the function is invoked
+//inside the function, arguments are local variables
 //4
