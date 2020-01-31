@@ -72,8 +72,10 @@ function myFunction (a,b){
 var result = myFunction (7,9);
 console.log(result);
 
-//3
+//3 Needs work
 function lFunction (start, end){
     for (var i=10 {
     } while (i >15)
 }
+
+//4
