@@ -54,6 +54,7 @@ if (count !== 1);
 
 //Function Homework
 
+//1
 var x = addNumber (10, 55);
 
 function addNumber (x, y) {
@@ -63,9 +64,16 @@ function addNumber (x, y) {
 }
 addNumber ();
 
-function answerThis (b, c) {
-    return b * c;
-    var b = 10;
-    var c = 50;
+//2
+
+function myFunction (a,b){
+    return a * b;
 }
-answerThis ();
+var result = myFunction (7,9);
+console.log(result);
+
+//3
+function lFunction (start, end){
+    for (var i=10 {
+    } while (i >15)
+}
