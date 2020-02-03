@@ -109,12 +109,22 @@ while (i <= 50){
   i++;
 }
 
+
+// Normal function
+function addTogether() {
+    var x = 20;
+    var y = 20;
+    var answer = x + y;
+    console.log(answer);
+    }
+   addTogether();
 //4
 var person; //global variable
 function name(x, y){
-   console.log(x + y);
+var answer = 'Lexie' + ' Helwig';
+console.log(answer);
 }
-name (Lexie, Helwig);
+name ();
 
 //5
 (function () {
