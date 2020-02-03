@@ -127,3 +127,10 @@ name ();
 //Exercise Math
 
 //1
+var x = Math.ceil(Math.random() * 20);
+console.log(x);
+ var y = prompt('Guess a number between 1 and 20');
+ if (y == x)
+   console.log('You got it!');
+  else
+   console.log('Nope, it was ' + x);
