@@ -124,7 +124,7 @@ name ();
     console.log(x);
     })();
 
-//Exercise Math
+EXERCISE MATH
 
 //1
 var x = Math.ceil(Math.random() * 20);
@@ -134,3 +134,5 @@ console.log(x);
    console.log('You got it!');
   else
    console.log('Nope, it was ' + x);
+
+
