@@ -110,14 +110,6 @@ while (i <= 50){
 }
 
 
-// Normal function
-function addTogether() {
-    var x = 20;
-    var y = 20;
-    var answer = x + y;
-    console.log(answer);
-    }
-   addTogether();
 //4
 var person; //global variable
 function name(x, y){
@@ -126,15 +118,11 @@ console.log(answer);
 }
 name ();
 
-//5
-(function () {
-    var name = "This is an IIFE"
-} )();
-
-function print (){
-    console.log ("hey");
-}
-print
+//5 IIFE
+(function() {
+    var x = "This is an IIFE"
+    console.log(x);
+    })();
 
 //Exercise Math
 
