@@ -52,7 +52,7 @@ console.log ((a * b) + (2 + true))
 //         // conditional statements are logged if one or another statement is met.
 //     }
 // }
-//**Loop Homework**
+/*//**Loop Homework**
 //1 
 var i;
 //2
@@ -134,5 +134,9 @@ console.log(x);
    console.log('You got it!');
   else
    console.log('Nope, it was ' + x);
+
+//
+*/
+
 
 

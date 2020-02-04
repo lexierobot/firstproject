@@ -30,23 +30,24 @@ var j = str.toUpperCase();
 console.log(j)
 
 //EXERCISE ARRAYS 2: Revenge of the Index
+    
+var inventory = [
+    ['bananas', 100],
+    ['spinach', 99],
+    ['peanut butter', 50],
+    ['avocado', 49],
+    ['almond milk', 100],
+    ['potatoes', 99],
+    ['butter', 50],
+    ['chicken', 49],
+    ['cheese', 100]
+    ['bread', 99]
+]
+    function add(){
+    var input = document.getElementById("input").value;
 
-var inventory = [];
-
-function fillArray() {
-    inventory["bananas"] = 50,
-    inventory["spinach"] = 40,
-    inventory["peanut butter"] = 34,
-    inventory["avocado"] = 28,
-    inventory["almond milk"] = 50,
-    inventory["potatoes"] = 30,
-    inventory["butter"] = 100,
-    inventory["chicken"] = 50,
-    inventory["cheese"] = 100,
-    inventory["bread"] = 50,
-fillArray();
-inventory.forEach(buy)
-    function buy(item, index, inventory) {
-    inventory[index] = item - 1;
-}
-}
+    for (var i = 0; i <= inventory.length[1]; i++) {
+        if(inventory[index] == input)
+            console.log(inventory[i--]);
+    }
+} add();
