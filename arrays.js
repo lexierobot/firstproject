@@ -1,36 +1,36 @@
-//    //EXERCISE ARRAY
+   //EXERCISE ARRAY
 
-//    //1 10 grocery store items on loop, log each
-//    var groceries = [ 
-//        "bananas",
-//        "spinach",
-//        "almond milk",
-//        "peanut butter",
-//        "avocado",
-//        "butter",
-//        "la croix",
-//        "blueberries",
-//        "strawberries",
-//        "yogurt"
-//     ];
-//     var i;
-//   for (i = 0; i <= 9; i++){
-//       console.log(groceries[i]);
-//   }
+   //1 10 grocery store items on loop, log each
+   var groceries = [ 
+       "bananas",
+       "spinach",
+       "almond milk",
+       "peanut butter",
+       "avocado",
+       "butter",
+       "la croix",
+       "blueberries",
+       "strawberries",
+       "yogurt"
+    ];
+    var i;
+  for (i = 0; i <= 9; i++){
+      console.log(groceries[i]);
+  }
 
-// //2 string 10char+, log each character
-// var str = "peanut butter";
-// var i = str.charAt();
-// for (i = 0; i <=12; i++) {
-//     console.log(str[i]);
-// }
+//2 string 10char+, log each character
+var str = "peanut butter";
+var i = str.charAt();
+for (i = 0; i <=12; i++) {
+    console.log(str[i]);
+}
 
-// //3 Make the string uppercase
-// var j = str.toUpperCase();
-// console.log(j)
+//3 Make the string uppercase
+var j = str.toUpperCase();
+console.log(j)
 
-//EXERCISE ARRAYS 2: Revenge of the Index
-//Grocery Store App
+// //EXERCISE ARRAYS 2: Revenge of the Index
+// //Grocery Store App
     
 // var inventory = [
 //     ['bananas', 100],
@@ -54,55 +54,78 @@
 //     }
 // } add();
 
-// // option 1: multideminsional array
-// let inventory = [
-//     ['apple', 10],
-//     ['blueberry', 15],
-//     ['broccoli', 5],
-//     ['milk', 25],
-//     ['cheese', 4]
-// ]
+// option 1: multideminsional array
+let inventory = [
+    ['apple', 10],
+    ['blueberry', 15],
+    ['broccoli', 5],
+    ['milk', 25],
+    ['cheese', 4]
+]
 
-// let cart = [];
+let cart = [];
 
-// function add(){
-//     let input = document.getElementById('userInput').value;
-//     inventory.forEach(array => {
-//         let name = array[0];
-//         let qty = array[1];
-//         if(input == name) {
-//             array[1] +=1;
-//             let temp = [];
-//             temp.push(name);
-//             temp.push(qty);
-//             cart.push(temp);
-//             console.log(cart);
-//             console.log(inventory);
-//         }    
-//     });
-// }
+function add(){
+    let input = document.getElementById('userInput').value;
+    inventory.forEach(array => {
+        let name = array[0];
+        let qty = array[1];
+        if(input == name) {
+            array[1] +=1;
+            let temp = [];
+            temp.push(name);
+            temp.push(qty);
+            cart.push(temp);
+            console.log(cart);
+            console.log(inventory);
+        }    
+    });
+}
 
-// function sub (){
-//     let input = document.getElementById('userInput').value;
-//     for(let i = 0; i < inventory.length; i++) {
-//         if(input == inventory[i][0]) {
-//             if(inventory[i][1] > 0) {
-//                 inventory[i][1] -= 1;
-//                 console.log(inventory[i]);
-//             } else {
-//                 console.log(`${input} is out of stock!`);
-//             }  
+function sub (){
+    let input = document.getElementById('userInput').value;
+    for(let i = 0; i < inventory.length; i++) {
+        if(input == inventory[i][0]) {
+            if(inventory[i][1] > 0) {
+                inventory[i][1] -= 1;
+                console.log(inventory[i]);
+            } else {
+                console.log(`${input} is out of stock!`);
+            }  
 
-//         }
-//     }
-// }
+        }
+    }
+}
 
-//Exercise Conditional
-var x = 2 //Create a counter variable with value 2
-x = 2 + 5;
-var y = x * 2;
+//Exercise Array
+//Rewrite
 
-console.log(y);
+//1
+var list = [
+    'bananas',
+    'spinach',
+    'milk',
+    'honey',
+    'butter',
+    'sugar',
+    'flour',
+    'juice',
+    'orange',
+    'tomato'
+];
 
-x = y%3;
-console.log(x);
+for(i = 0; i <= 9; i++) {
+    console.log(list[i]);
+}
+
+//2
+var x = 'grocery store';
+
+for (i = 0; i <= x.length; i++) {
+    console.log(x[i]);
+};
+
+//3
+for (i = 0; i <= x.length; i++) {
+    console.log(x.toUpperCase([i]));
+};

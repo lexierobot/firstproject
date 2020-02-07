@@ -102,7 +102,6 @@ if (k%2 == 0) {
 // addNumber(5,10);
 
 // //2
-
 // function multiply (c,d) {
 //     console.log (c*d);
 // }
