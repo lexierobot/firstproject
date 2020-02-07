@@ -54,45 +54,55 @@
 //     }
 // } add();
 
-// option 1: multideminsional array
-let inventory = [
-    ['apple', 10],
-    ['blueberry', 15],
-    ['broccoli', 5],
-    ['milk', 25],
-    ['cheese', 4]
-]
+// // option 1: multideminsional array
+// let inventory = [
+//     ['apple', 10],
+//     ['blueberry', 15],
+//     ['broccoli', 5],
+//     ['milk', 25],
+//     ['cheese', 4]
+// ]
 
-let cart = [];
+// let cart = [];
 
-function add(){
-    let input = document.getElementById('userInput').value;
-    inventory.forEach(array => {
-        let name = array[0];
-        let qty = array[1];
-        if(input == name) {
-            array[1] +=1;
-            let temp = [];
-            temp.push(name);
-            temp.push(qty);
-            cart.push(temp);
-            console.log(cart);
-            console.log(inventory);
-        }    
-    });
-}
+// function add(){
+//     let input = document.getElementById('userInput').value;
+//     inventory.forEach(array => {
+//         let name = array[0];
+//         let qty = array[1];
+//         if(input == name) {
+//             array[1] +=1;
+//             let temp = [];
+//             temp.push(name);
+//             temp.push(qty);
+//             cart.push(temp);
+//             console.log(cart);
+//             console.log(inventory);
+//         }    
+//     });
+// }
 
-function sub (){
-    let input = document.getElementById('userInput').value;
-    for(let i = 0; i < inventory.length; i++) {
-        if(input == inventory[i][0]) {
-            if(inventory[i][1] > 0) {
-                inventory[i][1] -= 1;
-                console.log(inventory[i]);
-            } else {
-                console.log(`${input} is out of stock!!`);
-            }  
+// function sub (){
+//     let input = document.getElementById('userInput').value;
+//     for(let i = 0; i < inventory.length; i++) {
+//         if(input == inventory[i][0]) {
+//             if(inventory[i][1] > 0) {
+//                 inventory[i][1] -= 1;
+//                 console.log(inventory[i]);
+//             } else {
+//                 console.log(`${input} is out of stock!`);
+//             }  
 
-        }
-    }
-}
+//         }
+//     }
+// }
+
+//Exercise Conditional
+var x = 2 //Create a counter variable with value 2
+x = 2 + 5;
+var y = x * 2;
+
+console.log(y);
+
+x = y%3;
+console.log(x);

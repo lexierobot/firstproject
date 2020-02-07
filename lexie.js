@@ -1,25 +1,42 @@
-// Lexie's javascript homework
+//Exercise Datatypes
+//Rewrite
+//2.
+var x = 'Frodo' + ' Gollum';
 
-/*"Frodo" + "Gollum"
+console.log(x);
 
-var Frodo = "good";
-var Gollum = "bad";
+//3.
+var home = 'shire';
+var zip = 30813;
 
-console.log (Frodo + Gollum);
+y = home * zip;
 
-var shire = "home";
-var mordor = 666;
+console.log(y);
 
-console.log (shire * mordor);
-console.log (2 + true);
+//Bonus
+console.log(2 + true);
 
-var a = "1";
-var b = "2";
 
-console.log (a + b);
-console.log (a * b);
-console.log ((a * b) + (2 + true))
-*/
+//Exercise Conditional 
+//Rewrite
+var i = 2;
+i +=5;
+var k = i * 2;
+
+console.log(k);
+
+k%=3; //should return value of 2
+
+console.log(k); 
+console.log(k%=2); //it returned 0 since 2/2 has no remainder
+
+//2 & 3
+if (k%2 == 0) {
+    console.log(true);
+} else {
+    console.log('variable was not even');
+};
+
 
 // **Conditional Homework**
 //1 
@@ -52,91 +69,85 @@ console.log ((a * b) + (2 + true))
 //         // conditional statements are logged if one or another statement is met.
 //     }
 // }
-/*//**Loop Homework**
-//1 
-var i;
-//2
-for (i = 0; i <=50; i++){
-    console.log(i);
-} 
-while(i<=50){ //3
-    console.log(i);
-    i+=2;
-}
+// //**Loop Homework**
+// //1 
+// var i;
+// //2
+// for (i = 0; i <=50; i++){
+//     console.log(i);
+// } 
+// while(i<=50){ //3
+//     console.log(i);
+//     i+=2;
+// }
 
-//4 Loop from 0 to 100
-var a;
-for (a = 0; a <=100; a++){
-    console.log(a);
-    if (a %3 === 0 && a %5 === 0)
-        console.log("fizzbuzz");
-    else if (a %3 === 0) 
-        console.log("fizz");
-     else if (a %5 === 0)
-        console.log ("buzz");
-    }
+// //4 Loop from 0 to 100
+// var a;
+// for (a = 0; a <=100; a++){
+//     console.log(a);
+//     if (a %3 === 0 && a %5 === 0)
+//         console.log("fizzbuzz");
+//     else if (a %3 === 0) 
+//         console.log("fizz");
+//      else if (a %5 === 0)
+//         console.log ("buzz");
+//     }
 
 //**Function Homework**
 
-//1
-function addNumber (x, y) {
-  console.log(x+y);
-}
-addNumber(5,10);
+// //1
+// function addNumber (x, y) {
+//   console.log(x+y);
+// }
+// addNumber(5,10);
 
-//2
+// //2
 
-function multiply (c,d) {
-    console.log (c*d);
-}
-multiply (9,9);
+// function multiply (c,d) {
+//     console.log (c*d);
+// }
+// multiply (9,9);
 
-//also 2
-function myFunction (a,b){
-    return a * b;
-}
-var result = myFunction (7,9);
-console.log(result);
+// //also 2
+// function myFunction (a,b){
+//     return a * b;
+// }
+// var result = myFunction (7,9);
+// console.log(result);
 
-//3
+// //3
 
-var i = 1;
+// var i = 1;
 
-while (i <= 50){
-  if(i%2===0){
-    console.log(i);
-  }
-  i++;
-}
-
-
-//4
-var person; //global variable
-function name(x, y){
-var answer = 'Lexie' + ' Helwig';
-console.log(answer);
-}
-name ();
-
-//5 IIFE
-(function() {
-    var x = "This is an IIFE"
-    console.log(x);
-    })();
-
-EXERCISE MATH
-
-//1
-var x = Math.ceil(Math.random() * 20);
-console.log(x);
- var y = prompt('Guess a number between 1 and 20');
- if (y == x)
-   console.log('You got it!');
-  else
-   console.log('Nope, it was ' + x);
-
-//
-*/
+// while (i <= 50){
+//   if(i%2===0){
+//     console.log(i);
+//   }
+//   i++;
+// }
 
 
+// //4
+// var person; //global variable
+// function name(x, y){
+// var answer = 'Lexie' + ' Helwig';
+// console.log(answer);
+// }
+// name ();
 
+// //5 IIFE
+// (function() {
+//     var x = "This is an IIFE"
+//     console.log(x);
+//     })();
+
+// //EXERCISE MATH
+
+// //1
+// var x = Math.ceil(Math.random() * 20);
+// console.log(x);
+//  var y = prompt('Guess a number between 1 and 20');
+//  if (y == x)
+//    console.log('You got it!');
+//   else
+//    console.log('Nope, it was ' + x);
