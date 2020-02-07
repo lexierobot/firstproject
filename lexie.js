@@ -150,3 +150,15 @@ if (k%2 == 0) {
 //    console.log('You got it!');
 //   else
 //    console.log('Nope, it was ' + x);
+
+
+//Exercise Dom manipulation
+
+// Changing Title
+var element = document.getElementById("title");element.innerHTML = "Title Changed From lexie.js";
+
+//Changing Button Color
+var color = document.getElementById("myBtn").style.color = 'purple';
+
+//
+
