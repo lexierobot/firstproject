@@ -160,21 +160,16 @@ var grocStore = [
     {invItem: 'oatmeal', invQty: 91}
 ];
 
-let input = document.getElementById('userInput').value;
-    // if (function add()) {
-    //     console.log();
-
-    // } else if function sub() {
-
-    // } else func
-
-
-
-
-
-
-
-
-
-
-
+function add() {
+    let input = document.getElementById('userInput').value;
+    // for(let i = 0; i < grocStore.length; i++){
+        if (input === grocStore.invItem) {
+            console.log('Valid Item');
+         } else if (input !== grocStore.invItem) {
+             console.log('Invalid Item');
+         } 
+        }
+        //  else {
+        //      console.log('')
+        //  }
+        // }
