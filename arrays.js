@@ -150,26 +150,42 @@ grocList.forEach(function(grocList) {
 
 //Exercise Grocery Store App
 
-var grocStore = [
-    {invItem: 'peaches', invQty: 24},
-    {invItem: 'pineapple', invQty: 75},
-    {invItem: 'peanut butter', invQty: 46},
-    {invItem: 'yogurt', invQty: 28},
-    {invItem: 'broccoli', invQty: 23},
-    {invItem: 'potatoes', invQty: 54},
-    {invItem: 'oatmeal', invQty: 91}
-];
+let item = ['peaches', 'pineapple', 'peanut butter', 'yogurt', 'brocolli', 'potatoes', 'oatmeal'];
+
+let qty = [ 24, 75, 46, 28, 23, 54, 91];
 
 function add() {
-    let input = document.getElementById('userInput').value;
-    // for(let i = 0; i < grocStore.length; i++){
-        if (input === grocStore.invItem) {
-            console.log('Valid Item');
-         } else if (input !== grocStore.invItem) {
-             console.log('Invalid Item');
-         } 
+        let input = document.getElementById('userInput').value;
+        for(let i = 0; i <item.length; i++) {
+            if(input ==item[i]){
+                qty[i]++;
+                console.log(item[i] + ':' + qty[i]);
+            } 
         }
-        //  else {
-        //      console.log('')
-        //  }
-        // }
+    }
+
+    function sub() {
+        let input = document.getElementById('userInput').value;
+        for(let i = 0; i > item.length; i++) {
+            if(input ==item[i]){
+                qty[i]++;
+                console.log('item[i] + ':' + qty[i]');
+            } else if (qty[i]=0) {
+                console.log('Out of Stock');
+            }
+        }
+    }
+
+
+
+
+
+// var grocStore = [
+//     {invItem: 'peaches', invQty: 24},
+//     {invItem: 'pineapple', invQty: 75},
+//     {invItem: 'peanut butter', invQty: 46},
+//     {invItem: 'yogurt', invQty: 28},
+//     {invItem: 'broccoli', invQty: 23},
+//     {invItem: 'potatoes', invQty: 54},
+//     {invItem: 'oatmeal', invQty: 91}
+// ];

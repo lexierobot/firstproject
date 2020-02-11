@@ -152,13 +152,46 @@ if (k%2 == 0) {
 //    console.log('Nope, it was ' + x);
 
 
-//Exercise Dom manipulation
+//Exercise Dom Manipulation
 
-// Changing Title
-var element = document.getElementById("title");element.innerHTML = "Title Changed From lexie.js";
+//Changing Title Text
+document.getElementById("title").textContent = "Title Changed From lexie.js";
 
-//Changing Button Color
-var color = document.getElementById("myBtn").style.color = 'purple';
+//Changing List Items Font, Color, Background
+document.getElementById("listItemOne").style.fontFamily = "Arial";
+document.getElementById("listItemTwo").style.background = "yellow";
+document.getElementById("listItemThree").style.color = "magenta";
 
-//
+//Changing Title Color to Purple
+document.getElementById('title').style.color = '#cba3f0';
 
+//Changing Button Color & Background Color
+document.getElementById("myBtn").style.color = 'white';
+document.getElementById('myBtn').style.background = 'hotpink';
+
+//Then I realized defining ID as a variable makes it prettier code!
+var unOrList = document.getElementById("listItemOne");
+
+unOrList.style.background = "pink";
+
+//Changing Class and Text of the Child or Sibling
+//1 of 3
+document.getElementById("listItemOne").innerHTML = '<em>This text is emphasized</em>'
+
+unOrList.className = 'newClass';
+console.log(unOrList);
+
+//2 of 3 
+var list2 = document.getElementById("listItemTwo");
+
+list2.className = 'classTwo';
+console.log(list2);
+
+list2.appendChild(document.createTextNode('Goodbye yellow brick road'));
+
+//3 of 3
+var liThree = document.getElementById('list3');
+liThree.appendChild(document.createTextNode(' - I used javascript to change this list item\'s text'));
+
+liThree.className = 'classThree';
+console.log(liThree);
