@@ -191,7 +191,46 @@ list2.appendChild(document.createTextNode('Goodbye yellow brick road'));
 
 //3 of 3
 var liThree = document.getElementById('list3');
+
 liThree.appendChild(document.createTextNode(' - I used javascript to change this list item\'s text'));
 
 liThree.className = 'classThree';
 console.log(liThree);
+
+
+//Exercise Event Listener
+//writing these to variables to make the function prettier
+var one = document.getElementById('listItemThree');
+var two = document.getElementById('list1');
+var three = document.getElementById('list2');
+
+//adding event listener to button 'get more elton john lyrics'
+document.getElementById('myBtn').addEventListener('click', onClick);
+
+//once button is clicked, the list items will display more lyrics to yellow brick road
+function onClick(){
+    one.appendChild(document.createTextNode('- Where the dogs of society howl,')),
+
+    two.appendChild(document.createTextNode('- You can\'t plant me in your penthouse,')),
+
+    three.appendChild(document.createTextNode('- I\'m goin\' back to my plow.'))
+};
+
+//Event Delegation
+
+//Adding some styling to the buttons first
+
+var toDo = document.getElementById('toDo').addEventListener('mOver');
+
+function mOver(){
+    toDo.style.backgroundColor = "black";
+    toDo.style.color = "white";
+}
+
+function mOut(){
+    toDo.onmouseover;
+};
+
+function click(){
+    toDo.onmouseover;
+};
